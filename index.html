@@ -8,11 +8,12 @@
 </fieldset>
 <br>
 <fieldset title='Titolo'>
-<p>Titolo: <input title='Titolo' id=title></p>
+<p>Titolo: <input title='Titolo' id=titolo></p>
 </fieldset>
 <br>
 <fieldset title='Testo'>
-<p>Testo: <textarea id=text></textarea></p>
+<p>Testo: <textarea id=testo></textarea></p>
 </fieldset>
 <br>
-<p><button onclick="new Audio('sms_alert_note.mp3').play();document.body.insertAdjacentHTML('beforebegin', '<dialog role=alert aria-roledescription=Notifica onclick=this.close() open><p>'+app.value+',  Adesso,  '+title.value+',  '+text.value+'</p></dialog>')">Crea</button></p>
+<p><button onclick="new Audio('sms_alert_note.mp3').play();document.body.insertAdjacentHTML('beforebegin', '<dialog role=alert aria-roledescription=Notifica onclick=this.close() open><button aria-roledescription=Notifica>'+app.value+',  Adesso,  '+titolo.value+',  '+testo.value+'</p></dialog>')">Crea</button></p>
+
