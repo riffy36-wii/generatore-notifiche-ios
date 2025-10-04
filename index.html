@@ -1,0 +1,18 @@
+<title>Generatore di notifiche (iOs)</title>
+<br>
+<br>
+<p>Scrivi nome app, titolo e testo della notifica.</p>
+<p>Riceverai una notifica (finta perché iOs fa schifo) contenente il nome app, il titolo e il testo che hai scritto.</p>
+<fieldset title='Nome applicazione'>
+<p>Nome applicazione: <input id=app title='Nome applicazione'></p>
+</fieldset>
+<br>
+<fieldset title='Titolo'>
+<p>Titolo: <input title='Titolo' id=title></p>
+</fieldset>
+<br>
+<fieldset title='Testo'>
+<p>Testo: <textarea id=text></textarea></p>
+</fieldset>
+<br>
+<p><button onclick="new Audio('sms_alert_note.mp3').play();document.body.insertAdjacentHTML('beforebegin', '<dialog role=alert aria-roledescription=Notifica onclick=this.close() open><p>'+app.value+',  Adesso,  '+title.value+',  '+text.value+'</p></dialog>')">Crea</button></p>
